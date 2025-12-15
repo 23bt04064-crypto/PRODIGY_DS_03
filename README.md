@@ -4,7 +4,7 @@
 <img width="1287" height="668" alt="Screenshot 2025-12-07 at 12 35 56 PM" src="https://github.com/user-attachments/assets/1c21686b-31d4-4fb7-a51c-2ff741882392" />
 
 
-Welcome to my submission for Task 3 of the Data Science Internship at Prodigy Infotech. In this task, I developed and evaluated a Decision Tree Classifier to predict whether a client will subscribe to a term deposit based on a bank marketing campaign dataset.
+The primary objective of Prodigy InfoTech Data Science Internship Task 3 was to build a predictive classification model (a Decision Tree Classifier) capable of determining whether a bank client would subscribe to a term deposit based on campaign and client features. Crucially, the model had to be developed without using the duration feature to prevent data leakage and ensure the model is practically applicable for predicting outcomes before a marketing call is made.
 
 ## Dataset
 
@@ -25,7 +25,7 @@ Bank Marketing
 
 ## Methodology
 
-The methodology for Task 3 focused on building an interpretable and robust Decision Tree model for predicting term deposit subscriptions. The process began with critical data preparation, specifically removing the data-leakage-prone duration feature and transforming all 16 categorical columns into numerical binary features using One-Hot Encoding. The imbalanced nature of the target variable was addressed proactively by using stratified sampling during the 80/20 data split. Finally, a Decision Tree Classifier was selected and trained with a fixed maximum depth of 5 to ensure the model was regulated against overfitting and remained simple enough for clear visual analysis and business interpretation .
+The methodology focused on building an interpretable and robust Decision Tree model. The process began with critical data preparation, specifically removing the data-leakage-prone duration feature and transforming all 16 categorical columns into numerical binary features using One-Hot Encoding (pd.get_dummies). The imbalanced nature of the target variable was addressed proactively by using stratified sampling during the 80/20 data split. Finally, a Decision Tree Classifier was selected and trained with a fixed maximum depth of 5 to ensure the model was regulated against overfitting and remained simple enough for clear visual analysis and business interpretation .
 
 
 ## Conclusion
